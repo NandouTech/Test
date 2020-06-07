@@ -3,7 +3,7 @@ $(function() {
 		extensions	: [ 'effect-slide-menu', 'pageshadow' ],
 		counters	: false,
 		navbar 		: {
-			title		: '菜单',
+			title		: 'Menus',
 		},
 		navbars		: [
 			 {
