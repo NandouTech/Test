@@ -63,7 +63,9 @@
       </div>
     </header>
 
-    <!--content-->    
+    <!--content-->
+    <div class="box">
+      <div class="content">    
     <B><P ALIGN="CENTER"><font face="굴림" lang="KO" size="4">고무특성 및 물성표</font></P><P ALIGN="CENTER"></B>　<CENTER></P><TABLE BORDER="1" CELLSPACING=2 CELLPADDING=6 WIDTH=900> 
       <TR><TD WIDTH="105" VALIGN="MIDDLE" COLSPAN=2> 
       <P ALIGN="CENTER"> 
@@ -606,6 +608,9 @@
       ⑤ 필요한 경도 · 색상 · 물성치 등을 내기 위해 8∼30가지 약품 사용.</FONT></P>
 
 
+    </div>
+    </div>
+    
     <!--footer start-->
     <div class="footer">      
       <div class="container">
@@ -641,5 +646,126 @@
       </div>           
     </div>
     <!--footer end-->
+
+    <!--移动端  Mmenu-->
+    <nav id="mmenu">
+      <ul>
+        <li><a href="../../../index.html">Home</a></li>
+                  
+        <li><a href="../../../channels/about_us.html">About us</a>                  
+                      
+        </li>
+                  
+        <li><a href="../../../channels/project.html">Project</a>
+                      
+        </li>
+                  
+        <li><a href="../../../channels/shop.html">Shop</a>
+                      
+        </li>
+                  
+        <li><a href="../../../channels/cart.html">Cart</a>
+                      
+        </li>
+                  
+        <li class="active"><a href="../../../channels/calculator.html">Calculator</a>                  
+                      
+        </li>
+                  
+        <li><a href="../../../channels/lincense.html">License</a>
+                      
+        </li>
+        
+      </ul>
+    </nav> 
+      <!--Include Js-->
+      <script src="../../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+      
+      <!--移动端导航-->
+      <script src="../../../js/jquery.mmenu.all.min.js" type="text/javascript" charset="utf-8"></script>
+      
+      <script src="../../../js/public.js" type="text/javascript" charset="utf-8"></script>
+      
+      <!--slick-->
+      <script src="../../../js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+      <script type="text/javascript">
+        $(function(){
+        $('.banner').slick({
+        dots: true,
+        autoplay:true,
+        arrows:false,
+        autoplaySpeed:3000,
+        });
+        
+        $(".demo1").slick({
+        dots:false,
+        arrows:false,
+        autoplay:true,
+        slidesToShow:7,
+        slidesToScroll:6,
+        responsive: [
+        {
+        breakpoint: 1200,
+        settings: {
+        slidesToShow: 5,
+        slidesToScroll: 5
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+        }
+        }
+        
+        ]
+        })
+        
+        $(".incasewrap").slick({
+        fade: true,
+        useTransform: true,
+        arrows: false,
+        draggable:false,
+        asNavFor:".incasefl"
+        })
+        $(".incasefl").slick({
+        focusOnSelect: true,
+        slidesToShow: 7,
+        useTransform: true,
+        arrows: false,
+        asNavFor:".incasewrap",
+        responsive: [
+        {
+        breakpoint: 768,
+        settings: {
+        slidesToShow: 3,
+        }
+        },
+        {
+        breakpoint: 480,
+        settings: {
+        slidesToShow: 3,
+        }
+        }
+        
+        ]
+        });
+        });
+      </script>
+      
+      <!--placeholder-->
+      <script src="../../../js/jquery.placeholder.min.js" type="text/javascript" charset="utf-8"></script>
+      <script type="text/javascript">
+        $(function(){ $('input, textarea').placeholder(); });
+      </script>
+      <script type="text/javascript" src="../../../js/scrollReveal.js"></script>
+      <script>
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+        (function(){
+        window.scrollReveal = new scrollReveal({reset: true});
+        })();
+        };
+      </script>
   </body>    
 </HTML>
