@@ -12,7 +12,7 @@
   transition: 0.5s all;
 }
 body {
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 .iconfont {
   font-family: 'iconfont';
