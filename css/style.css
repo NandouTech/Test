@@ -104,12 +104,25 @@ img {
   border: 1px solid #fff;
 }
 /*-content-*/
-.content{
+.box{
+  width: 750px;
+  margin: auto;
+}
+.box .content{
   color: black;
 }
-.box{
-  width:80%;
-  margin: auto;
+.box .contents{
+  float: left;
+  width: 30%; 
+}
+.box .rightcolumn{
+  float: right;
+  width: 50%;
+}
+
+.box .leftcolumn{
+  float: right;
+  width: 100%;  
 }
 /*********nav start***********/
 .navwrap {
@@ -459,8 +472,9 @@ img {
 }
 /*footer start*/
 .footer {
-  padding: 40px 0 20px;
+  padding: 10px 0 0px;
   background: #2b2b2b;
+  bottom: 0px;
 }
 .footer .fleft {
   width: 66%;
