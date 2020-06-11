@@ -115,12 +115,12 @@ img {
   float: left;
   width: 30%; 
 }
-.box .rightcolumn{
+.rightcolumn{
   float: right;
   width: 50%;
 }
 
-.box .leftcolumn{
+.leftcolumn{
   float: right;
   width: 100%;  
 }
